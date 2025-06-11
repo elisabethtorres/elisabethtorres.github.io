@@ -2,9 +2,99 @@
 <html>
 <head>
   <title>Customer Testimonials – Eloheh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Verdana, sans-serif; color: #333366; }
-    .quote { font-family: "Times New Roman", serif; font-size: 18px; color: #006666; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .container {
+      border: 2px solid #ccc;
+      background-color: #eee;
+      border-radius: 5px;
+      padding: 16px;
+      margin: 16px 0;
+    }
+
+    .container::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .container img {
+      float: left;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    .container span {
+      font-size: 20px;
+      margin-right: 15px;
+      color: #2E8B57; /* Font color 1 */
+      font-style: italic;
+    }
+
+    h2 {
+      font-size: 26px; /* Font size 1 */
+      color: #006666; /* Font color 2 */
+      font-family: Georgia, serif; /* Font style 2 */
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        text-align: center;
+      }
+      .container img {
+        margin: auto;
+        float: none;
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <h2><u>Customer Testimonials</u></h2>
+  <p><b>Here's how Eloheh is changing lives:</b></p>
+
+  <div class="container">
+    <img src="eloheh-customer.jpg" alt="Avatar" style="width:90px">
+    <p><span>Sarah M.</span> Wellness Enthusiast</p>
+    <p><i>"Eloheh’s supplements helped me feel better in just weeks."</i></p>
+  </div>
+
+  <div class="container">
+    <img src="eloheh-customer2.jpg" alt="Avatar" style="width:90px">
+    <p><span>Daniel R.</span> Teacher</p>
+    <p><i>"Their skincare line finally gave me relief from eczema."</i></p>
+  </div>
+
+  <h3>Why Customers Choose Eloheh</h3>
+  <ul>
+    <li>All-natural ingredients</li>
+    <li>Fast shipping</li>
+    <li>Personalized wellness plans</li>
+  </ul>
+
+  <h3>Top Rated Services</h3>
+  <ol>
+    <li>Telehealth consultations</li>
+    <li>Custom vitamin subscriptions</li>
+    <li>Chronic pain care kits</li>
+  </ol>
+
+  <p>Want to learn more? Visit our partner site: 
+    <a href="https://www.westlafayette.in.gov/our-city/wellness-center" target="_blank">West Lafayette Wellness Center</a>
+  </p>
+
+  <p><a href="mailto:eloheh.customer@purdue.edu">Contact Me</a></p>
+  <p><a href="eloheh-reviews.pdf" download>Download Full Testimonials PDF</a></p>
+
+  <script>
+    document.write("<p>Last modified: " + document.lastModified + "</p>");
+  </script>
+
+</body>
+</html>
